@@ -6,6 +6,7 @@ str="$*"
 if [ -z "$str" ]
 then 
 echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+exit
 else
-ping -c 5 "$str" ; echo $
+ping -c 5 "$str"
 fi
